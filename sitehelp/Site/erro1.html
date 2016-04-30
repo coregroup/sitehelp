@@ -38,7 +38,7 @@
     <div class="blog-masthead">
       <div class="container">
         <nav class="blog-nav">
-          <a class="blog-nav-item " href="teladeinicio.html#">Inicio</a>
+          <a class="blog-nav-item " href="index.html#">Inicio</a>
           <a class="blog-nav-item" href="#">Contatos</a>
           <a class="blog-nav-item" href="#">Duvidas</a>
           <a class="blog-nav-item" href="#" title="Conheca tudo sobre o site">Sobre</a>
@@ -74,14 +74,22 @@ com dois sinais de igual (==).</p>
 <center><p>ERRADO</p><center>
 
 <pre align="left"> 
-...
-int i==0;	//<i style="color:#ff0000;"> "i" eh comparada com o numero "0" em vez de receber o valor "0". </i>
-float calc==0;		//<i style="color:#ff0000;"> O mesmo acontece com a variavel "calc".</i> 
-...
-i==i+1;		//<i style="color:#ff0000;"> "i" eh comparado com "i+1" em vez de receber o valor de "i+1".</i>
 
-enquanto (calc=0) {		//<i style="color:#ff0000;"> "calc" recebe o valor "0" em vez de verificar se o valor de "calc" eh igual a "0".</i>
-... 
+<font color="#006600">//Descricao do programa: Leia o numero 5 e informe se o numero digitado pelo usuario foi igual a 5.</font> 
+<font color="#0000FF">programa</font>
+<font color="#FF0000">{</font>
+	<font color="#0000FF">funcao</font> inicio<font color="#FF0000">()</font>
+	<font color="#FF0000">{</font>
+		<font color="#33CCFF">inteiro</font> numero		
+		<font color="#FFCC00">escreva</font><font color="#FF0000">(</font><font color="#FF00FF">"Digite o numero 5: "</font><font color="#FF0000">)</font>
+		<font color="#FFCC00">leia</font><font color="#FF0000">(</font>numero<font color="#FF0000">)</font>
+<font color="#0000FF">		se</font> <font color="#FF0000">(</font>numero=<font color="#0000FF">5</font>)<font color="#FF0000">{</font> <font color="#006600">   /* A variavel "numero" recebe o valor 5 em vez de compara-la com o numero 5.
+Mesmo o usuario digitando outro numero a variavel "numero" sempre recebera o valor 5.*/ </font>
+			<font color="#FFCC00">escreva</font><font color="#FF0000">(</font><font color="#FF00FF">"Voce digitou o numero 5"</font><font color="#FF0000">)</font> <font color="#006600">// o programa sempre vira para essa linha, independetemente do numero digitado.</font>
+		<font color="#FF0000">}</font> 
+<font color="#0000FF">		senao</font> <font color="#FFCC00">escreva</font><font color="#FF0000">(</font><font color="#FF00FF">"voce nao digitou o numero 5"</font><font color="#FF0000">)</font>  <font color="#006600">// essa linha nunca sera executada.</font> 		
+	<font color="#FF0000">}</font>
+<font color="#FF0000">}</font> 
 </pre>
 
 <br/>
@@ -89,14 +97,20 @@ enquanto (calc=0) {		//<i style="color:#ff0000;"> "calc" recebe o valor "0" em v
 <center><p>CERTO</p><center>
 
 <pre align="left"> 
-...
-int i=0;		//<i style="color:#0000ff;"> O valor "0" eh atribuido a varialvel "i".</i> 
-float calc=0;		//<i style="color:#0000ff;"> A variavel "calc" recebe o valor "0".</i> 
-...
-i=i+1;		//<i style="color:#0000ff;"> O valor de "i+1" sera atribuido a variavel "i".</i> 
-enquanto (calc==0) {		//<i style="color:#0000ff;"> O valor da variavel "calc" esta sendo comparada com o valor "0", se o valor da varialvel "calc" for igual a "0" a repeticao acontecera ate que o valor de "calc" seja diferente de "0".</i> 
-...
-</pre>
+<font color="#006600">//Descricao do programa: Leia o numero 5 e informe se o numero digitado pelo usuario foi igual a 5.</font> 
+<font color="#0000FF">programa</font>
+<font color="#FF0000">{</font>
+	<font color="#0000FF">funcao</font> inicio<font color="#FF0000">()</font>
+	<font color="#FF0000">{</font>
+		<font color="#33CCFF">inteiro</font> numero		
+		<font color="#FFCC00">escreva</font><font color="#FF0000">(</font><font color="#FF00FF">"Digite o numero 5: "</font><font color="#FF0000">)</font>
+		<font color="#FFCC00">leia</font><font color="#FF0000">(</font>numero<font color="#FF0000">)</font>
+<font color="#0000FF">		se</font> <font color="#FF0000">(</font>numero==<font color="#0000FF">5</font>)<font color="#FF0000">{</font> <font color="#006600">   //a variavel "numero" eh comparada com o numero 5. </font>
+			<font color="#FFCC00">escreva</font><font color="#FF0000">(</font><font color="#FF00FF">"Voce digitou o numero 5"</font><font color="#FF0000">)</font> <font color="#006600">////se voce digitar o numero 5 o programa passa para essa linha.   </font>
+		<font color="#FF0000">}</font> 
+<font color="#0000FF">		senao</font> <font color="#FFCC00">escreva</font><font color="#FF0000">(</font><font color="#FF00FF">"voce nao digitou o numero 5"</font><font color="#FF0000">)</font>  <font color="#006600">// se digitar um numero diferente de 5 o programa pula para essa linha. </font> 		
+	<font color="#FF0000">}</font>
+<font color="#FF0000">}</font></pre>
 
 
 <hr>
@@ -111,7 +125,7 @@ enquanto (calc==0) {		//<i style="color:#0000ff;"> O valor da variavel "calc" es
           <nav>
             <ul class="pager">
               <li>
-<center><a href="teladeinicio.html#" ><button type="button" class="btn btn-lg btn-primary">Anterior</button></a>
+<center><a href="index.html#" ><button type="button" class="btn btn-lg btn-primary">Anterior</button></a>
 <a href="erro2.html"><button type="button" class="btn btn-lg btn-primary">Proximo</button></a></center>
 
 </li>
@@ -129,7 +143,6 @@ enquanto (calc==0) {		//<i style="color:#0000ff;"> O valor da variavel "calc" es
             <ol class="list-unstyled">
 
 <ol>
-
 <li><b><a active="" href="erro1.html#">Usar sinal de atribuicao (=) em vez de comparacao (==), ou vice-versa.</a></b></li>
 
 <li>
@@ -201,9 +214,6 @@ enquanto (calc==0) {		//<i style="color:#0000ff;"> O valor da variavel "calc" es
 
 <li>
 <a href="erro24.html#"> Erro Semantico</a></li>
-
-<li>
-<a href="erro25.html#"> Nenhum Erro.</a></li>
 
 <li>
 <a href="erro26.html#"> Codigo nao corresponde com a questao.</a></li>
