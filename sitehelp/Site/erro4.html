@@ -10,7 +10,7 @@
     <link rel="icon" href="ifs.png">
 
 
-    <title>Erro na hora de comparar uma variavel.</title>
+    <title>Utilizar variaveis nao declaradas.</title>
 
     <!-- Bootstrap core CSS -->
     <link href="./1 erro_files/bootstrap.min.css" rel="stylesheet">
@@ -38,7 +38,7 @@
     <div class="blog-masthead">
       <div class="container">
         <nav class="blog-nav">
-          <a class="blog-nav-item " href="index.html#">Inicio</a>
+          <a class="blog-nav-item " href="index.html#"title="Voltar a pagina inicial.">Inicio</a>
           <a class="blog-nav-item" href="#">Contatos</a>
           <a class="blog-nav-item" href="#">Duvidas</a>
           <a class="blog-nav-item" href="#" title="Conheca tudo sobre o site">Sobre</a>
@@ -61,35 +61,30 @@
           <div class="blog-post">
 
 
-            <h2> Usar sinal de atribuicao (=) em vez de comparacao (==), ou vice-versa: </h2>
+            <h2>Nao declarar variaveis utilizadas dentro do programa.</h2>
 <br/>
 <hr>
 <br/>
-<p> O comando de atribuicao de valor de expressoes a variaveis eh o sinal de igual (=). O
-comando de comparacao (o teste "se o conteudo da variavel eh igual a expressao") eh feito
-com dois sinais de igual (==).</p>  
+<p>Todas as variaveis devem ser declaradas. Esse tipo de erro eh chamado de Erro de Compilacao.<br/> No exemplo abaixo, a variavel "area", foi utilizada mas nao foi declarada.</p>  
 <br/>
 <hr>
 <p>Exemplos:</p>          
 <center><p>ERRADO</p><center>
-
 <pre align="left"> 
-
-<font color="#006600">//Descricao do programa: Leia o numero 5 e informe se o numero digitado pelo usuario foi igual a 5.</font> 
+<font color="#006600">//Descricao do programa: Calcular a area de um retangulo.</font> 
 <font color="#0000FF">programa</font>
 <font color="#FF0000">{</font>
 	<font color="#0000FF">funcao</font> inicio<font color="#FF0000">()</font>
-	<font color="#FF0000">{</font>
-		<font color="#33CCFF">inteiro</font> numero		
-		<font color="#FFCC00">escreva</font><font color="#FF0000">(</font><font color="#FF00FF">"Digite o numero 5: "</font><font color="#FF0000">)</font>
-		<font color="#FFCC00">leia</font><font color="#FF0000">(</font>numero<font color="#FF0000">)</font>
-<font color="#0000FF">		se</font> <font color="#FF0000">(</font>numero=<font color="#0000FF">5</font>)<font color="#FF0000">{</font> <font color="#006600">   /* A variavel "numero" recebe o valor 5 em vez de compara-la com o numero 5.
-Mesmo o usuario digitando outro numero a variavel "numero" sempre recebera o valor 5.*/ </font>
-			<font color="#FFCC00">escreva</font><font color="#FF0000">(</font><font color="#FF00FF">"Voce digitou o numero 5"</font><font color="#FF0000">)</font> <font color="#006600">// o programa sempre vira para essa linha, independetemente do numero digitado.</font>
-		<font color="#FF0000">}</font> 
-<font color="#0000FF">		senao</font> <font color="#FFCC00">escreva</font><font color="#FF0000">(</font><font color="#FF00FF">"voce nao digitou o numero 5"</font><font color="#FF0000">)</font>  <font color="#006600">// essa linha nunca sera executada.</font> 		
+	<font color="#FF0000">{</font>		
+		<font color="#33CCFF">real</font> altura, largura   <font color="#006600">// A variavel "area" nao foi declarada.</font>	
+		<font color="#FFCC00">escreva</font><font color="#FF0000">(</font><font color="#FF00FF">"Digite a altura: "</font><font color="#FF0000">)</font>  
+		<font color="#FFCC00">leia</font><font color="#FF0000">(</font>altura<font color="#FF0000">)</font>
+		<font color="#FFCC00">escreva</font><font color="#FF0000">(</font><font color="#FF00FF">"Digite a largura: "</font><font color="#FF0000">)</font> 
+		<font color="#FFCC00">leia</font><font color="#FF0000">(</font>largura<font color="#FF0000">)</font>
+		area=altura*largura  <font color="#006600">//A variavel "area" nao foi declarada.</font>
+		<font color="#FFCC00">escreva</font><font color="#FF0000">(</font><font color="#FF00FF">"Area total: "</font>, area<font color="#FF0000">)</font>
 	<font color="#FF0000">}</font>
-<font color="#FF0000">}</font> 
+<font color="#FF0000">}</font>
 </pre>
 
 <br/>
@@ -97,20 +92,21 @@ Mesmo o usuario digitando outro numero a variavel "numero" sempre recebera o val
 <center><p>CERTO</p><center>
 
 <pre align="left"> 
-<font color="#006600">//Descricao do programa: Leia o numero 5 e informe se o numero digitado pelo usuario foi igual a 5.</font> 
+<font color="#006600">//Descricao do programa: Calcular a area de um retangulo.</font> 
 <font color="#0000FF">programa</font>
 <font color="#FF0000">{</font>
 	<font color="#0000FF">funcao</font> inicio<font color="#FF0000">()</font>
-	<font color="#FF0000">{</font>
-		<font color="#33CCFF">inteiro</font> numero		
-		<font color="#FFCC00">escreva</font><font color="#FF0000">(</font><font color="#FF00FF">"Digite o numero 5: "</font><font color="#FF0000">)</font>
-		<font color="#FFCC00">leia</font><font color="#FF0000">(</font>numero<font color="#FF0000">)</font>
-<font color="#0000FF">		se</font> <font color="#FF0000">(</font>numero==<font color="#0000FF">5</font>)<font color="#FF0000">{</font> <font color="#006600">   //a variavel "numero" eh comparada com o numero 5. </font>
-			<font color="#FFCC00">escreva</font><font color="#FF0000">(</font><font color="#FF00FF">"Voce digitou o numero 5"</font><font color="#FF0000">)</font> <font color="#006600">////se voce digitar o numero 5 o programa passa para essa linha.   </font>
-		<font color="#FF0000">}</font> 
-<font color="#0000FF">		senao</font> <font color="#FFCC00">escreva</font><font color="#FF0000">(</font><font color="#FF00FF">"voce nao digitou o numero 5"</font><font color="#FF0000">)</font>  <font color="#006600">// se digitar um numero diferente de 5 o programa pula para essa linha. </font> 		
+	<font color="#FF0000">{</font>		
+		<font color="#33CCFF">real</font> altura, largura, area 	
+		<font color="#FFCC00">escreva</font><font color="#FF0000">(</font><font color="#FF00FF">"Digite a altura: "</font><font color="#FF0000">)</font>  
+		<font color="#FFCC00">leia</font><font color="#FF0000">(</font>altura<font color="#FF0000">)</font>
+		<font color="#FFCC00">escreva</font><font color="#FF0000">(</font><font color="#FF00FF">"Digite a largura: "</font><font color="#FF0000">)</font> 
+		<font color="#FFCC00">leia</font><font color="#FF0000">(</font>largura<font color="#FF0000">)</font>
+		area=altura*largura 
+		<font color="#FFCC00">escreva</font><font color="#FF0000">(</font><font color="#FF00FF">"Area total: "</font>, area<font color="#FF0000">)</font>
 	<font color="#FF0000">}</font>
-<font color="#FF0000">}</font></pre>
+<font color="#FF0000">}</font>
+</pre>
 
 
 <hr>
@@ -125,8 +121,8 @@ Mesmo o usuario digitando outro numero a variavel "numero" sempre recebera o val
           <nav>
             <ul class="pager">
               <li>
-<center><a href="index.html#" ><button type="button" class="btn btn-lg btn-primary">Anterior</button></a>
-<a href="erro2.html"><button type="button" class="btn btn-lg btn-primary">Proximo</button></a></center>
+<center><a href="erro3.html#" ><button type="button" class="btn btn-lg btn-primary">Anterior</button></a>
+<a href="erro5.html"><button type="button" class="btn btn-lg btn-primary">Proximo</button></a></center>
 
 </li>
             </ul>
@@ -143,7 +139,7 @@ Mesmo o usuario digitando outro numero a variavel "numero" sempre recebera o val
             <ol class="list-unstyled">
 
 <ol>
-<li><b><a active="" href="erro1.html#">Usar sinal de atribuicao (=) em vez de comparacao (==), ou vice-versa.</a></b></li>
+<li><a href="erro1.html#">Usar sinal de atribuicao (=) em vez de comparacao (==), ou vice-versa.</a></li>
 
 <li>
 <a href="erro2.html#">Utilizar parentesis Descasados .</a></li>
@@ -151,8 +147,8 @@ Mesmo o usuario digitando outro numero a variavel "numero" sempre recebera o val
 <li>
 <a href="erro3.html#">Utilizar chaves Descasados .</a></li>
 
-<li>
-<a href="erro4.html#">Utilizar variaveis nao declaradas .</a></li>
+<li><b>
+<a href="erro4.html#">Utilizar variaveis nao declaradas .</a></b></li>
 
 <li>
 <a href="erro5.html#">Colocar espaco entre os dois caracteres que compoem os operadores  ( ==, &lt;=,&gt;=,!=) .</a></li>
@@ -233,7 +229,7 @@ Orientados pela professora: Priscylla Silva <br>
 
 <img src="twitter.png" width="20px" height="20px" />  Twitter: <a href="https://twitter.com/@brunocaldas2" title="Ir ao twitter de Bruno Caldas ">@brunocaldas2</a>.</p>
       <p>
-        <a href="erro1.html#">Voltar ao inicio da pagina</a>
+        <a href="erro4.html#">Voltar ao inicio da pagina</a>
       </p>
     </footer>
 

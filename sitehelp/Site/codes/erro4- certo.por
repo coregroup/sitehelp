@@ -1,17 +1,16 @@
-// Descrição do Programa: leia a idade do usuário e informe se ele pode comprar bebidas alcoolicas.
+//Descição do programa: Calcular a área de um retângulo
 programa
 {
 	funcao inicio()
 	{
-	inteiro idade
-		escreva("Qual a idade: ")
-		leia(idade)
-		se(idade>=18){
-			escreva("Pode comprar!")			
-		}
-		senao{
-			escreva("Não pode comprar!") 
-		}
+		real altura, largura, area
+		escreva("Digite a altura:")
+		leia(altura)
+		escreva("Digite a largura:")
+		leia(largura)
+		area=altura*largura
+		escreva("Área total= ",area)
+		
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -19,7 +18,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 290; 
+ * @POSICAO-CURSOR = 275; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
