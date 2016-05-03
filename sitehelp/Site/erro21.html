@@ -1,0 +1,264 @@
+<html lang="pt"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="icone.ico">
+
+
+    <title>Case Sensitive</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./1 erro_files/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="./1 erro_files/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./1 erro_files/blog.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="./1 erro_files/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+  <body>
+
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="blog-nav">
+          <a class="blog-nav-item " href="index.html#">Inicio</a>
+          <a class="blog-nav-item" href="#">Contatos</a>
+          <a class="blog-nav-item" href="#">Duvidas</a>
+          <a class="blog-nav-item" href="#" title="Conheca tudo sobre o site">Sobre</a>
+        </nav>
+      </div>
+    </div>
+
+    
+
+
+<div class="container">
+
+      <div class="blog-header">
+        <h1 class="blog-title"></h1> </div>
+
+      <div class="row">
+
+        <div class="col-sm-8 blog-main">
+
+          <div class="blog-post">
+
+
+            <h2> Erros relacionados ao Case Sensitive </h2>
+<br/>
+<hr>
+<br/>
+<p> Este erro acontece devido ao motivo que o Portugol Studio segue regras de que : </p> 
+<ul>
+<li>O primeiro caracter deve ser uma letra;</li> 
+<li>Os nomes devem ser formados por caracteres pertencentes ao seguinte conjunto: {a,b,c,...,z,A,B,C,...Z,0,1,2,...,9,_};</li> 
+<li>Não deve haver espaço em branco;</li>
+<li>Não deve haver variáveis repetidas;</li>
+<li>Cuidado com Case Sensitive.</li>
+</ul> 
+<p>Case Sensitive : termo em inglês que significa Sensível ao tamanho, no caso, o tamanho refere-se a maiúsculas e minúsculas na definição de variáveis, métodos e comando em um programa ou um compilador. Ou seja, significa também que o Português Estruturado faz a distinção entre os tamanhos das letras.</p> 
+<br/>
+<hr>
+<p>Exemplos:</p>          
+<center><p>ERRADO</p><center>
+
+<pre align="left"> 
+<font color="#006600">//Descricao do programa: Escreva um script que dê um desconto de 10% no valor do produto.</font> 
+
+<font color="#0000FF">programa</font>
+<font color="#FF0000">{</font>
+	<font color="#0000FF">funcao</font> inicio<font color="#FF0000">()</font>
+	<font color="#FF0000">{</font>
+
+		Real valor_do_produto, Desconto <font color="#006600">//Este erro é válido tanto para comandos como para nome de variáveis.</font> 
+
+		<font color="#CFB53B">escreva </font><font color="#FF0000">(</font><font color="#CC3299">"Informe o valor do produto : "</font><font color="#FF0000">)</font>
+		<font color="#CFB53B">leia </font><font color="#FF0000">(</font>valor_do_produto<font color="#FF0000">)</font>
+
+		desconto <font color="#6F4242">=</font> valor_do_produto<font color="#6F4242">-</font><font color="#FF0000">((</font>valor_do_produto<font color="#6F4242">/</font><font color="#6B238E">100</font><font color="#FF0000">)</font><font color="#6F4242">*</font><font color="#6B238E">10</font><font color="#FF0000">)</font>
+		
+		Escreva <font color="#FF0000">(</font><font color="#CC3299">"O valor do produto com o desconto é : "</font>, desconto<font color="#FF0000">)</font>
+	<font color="#FF0000">}</font>
+<font color="#FF0000">}</font>
+</pre>
+
+<br/>
+
+<center><p>CERTO</p><center>
+
+<pre align="left"> 
+<font color="#006600">//Descricao do programa: Escreva um script que dê um desconto de 10% no valor do produto.</font> 
+
+<font color="#0000FF">programa</font>
+<font color="#FF0000">{</font>
+	<font color="#0000FF">funcao</font> inicio<font color="#FF0000">()</font>
+	<font color="#FF0000">{</font>
+
+		<font color="#238E68">real</font> valor_do_produto, desconto
+
+		<font color="#CFB53B">escreva </font><font color="#FF0000">(</font><font color="#CC3299">"Informe o valor do produto : "</font><font color="#FF0000">)</font>
+		<font color="#CFB53B">leia </font><font color="#FF0000">(</font>valor_do_produto<font color="#FF0000">)</font>
+
+		desconto <font color="#6F4242">=</font> valor_do_produto<font color="#6F4242">-</font><font color="#FF0000">((</font>valor_do_produto<font color="#6F4242">/</font><font color="#6B238E">100</font><font color="#FF0000">)</font><font color="#6F4242">*</font><font color="#6B238E">10</font><font color="#FF0000">)</font>
+		
+		<font color="#CFB53B">escreva </font><font color="#FF0000">(</font><font color="#CC3299">"O valor do produto com o desconto é : "</font>, desconto<font color="#FF0000">)</font>
+	<font color="#FF0000">}</font>
+<font color="#FF0000">}</font>
+</pre>
+
+
+<hr>
+          </div>
+
+<!-- /.blog-post -->
+
+          <div class="blog-post">
+                               
+          </div><!-- /.blog-post -->
+
+          <nav>
+            <ul class="pager">
+              <li>
+<center><a href="erro20.html" ><button type="button" class="btn btn-lg btn-primary">Anterior</button></a>
+<a href="erro22.html"><button type="button" class="btn btn-lg btn-primary">Próximo</button></a></center>
+
+</li>
+            </ul>
+   </nav>
+
+        </div><!-- /.blog-main -->
+
+        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+          
+
+<div class="sidebar-module">
+
+            <h4>Erros:</h4>
+            <ol class="list-unstyled">
+
+<ol>
+<li><a active="" href="erro1.html#">Usar sinal de atribuição (=) em vez de comparação (==), ou vice-versa.</a></li>
+
+<li>
+<a href="erro2.html#">Utilização incorreta do ponto e virgula (;) .</a></li>
+
+<li>
+<a href="erro3.html#">Utilizar parêntesis Descasados .</a></li>
+
+<li>
+<a href="erro4.html#">Utilizar chaves Descasados .</a></li>
+
+<li>
+<a href="erro5.html#">Utilizar variáveis não declaradas .</a></li>
+
+<li>
+<a href="erro6.html#">Colocar espaço entre os dois caracteres que compõem os operadores  ( ==, &lt;=,&gt;=,!=) .</a></li>
+
+<li>
+<a href="erro7.html#">Inversão da ordem dos dois caracteres que compõem os operadores  (&lt;=,&gt;=,!=) escrevendo (=&lt;,=&gt;,=!) </a></li>
+
+<li>
+<a href="erro8.html#">Dividir um número inteiro por um numero real .</a></li>
+
+<li>
+<a href="erro9.html#">Usar as aspas Descasadas num Printf .</a></li>
+
+<li>
+<a href="erro10.html#">Utilizar as aspas Descasadas num Scanf .</a></li>
+
+<li>
+<a href="erro11.html#">Errar a escrita de um comando .</a></li>
+
+<li>
+<a href="erro12.html#">Esquecer o E comercial (&amp;) no Scanf .</a></li>
+
+<li>
+<a href="erro13.html#">Colocação das flags incorretas (%c,%f,%d,...) no Scanf ou Printf . </a></li>
+
+<li>
+<a href="erro14.html">Criação de ciclo infinito.</a></li>
+
+<li>
+<a href="erro15.html#">Utilização de barra (/) em vez de barra invertida (\).</a></li>
+
+<li>
+<a href="erro16.html#">Declaração de variável incompatível com o seu tipo declarado.</a></li>
+
+<li>
+<a href="erro17.html#">Fazer comparação com uma variável do tipo char e um caracter e não colocar este caracter entre aspas simples.</a></li>
+
+<li>
+<a href="erro18.html#">Uso incorreto das chaves em comandos de repetição.</a></li>
+
+<li>
+<a href="erro19.html#"> Utilização incorreta de variáveis contadoras ou acumuladoras em comandos de repetição (Esquecer de declarar, ...).</a></li>
+
+<li>
+<a href="erro20.html#"> Erro na declaração de variáveis, relacionados ao nome.</a></li>
+
+<li>
+<a href="erro21.html#"><b> Erros de Case Sensitive.</b></a></li>
+
+<li>
+<a href="erro22.html#"> Uso de código que não é necessário para a solução do problema.</a></li>
+
+<li>
+<a href="erro23.html#"> Código Incompleto.</a></li>
+
+
+<li>
+<a href="erro24.html#"> Erro Semântico</a></li>
+
+<li>
+<a href="erro26.html#"> Código não corresponde com a questão.</a></li>
+
+<li>
+<a href="erro27.html#"> Utilização de variável sem necessidade.</a></li>
+</ol>
+
+
+</div>
+
+     </div><!-- /.blog-sidebar -->
+
+ 
+
+    </div><!-- /.container -->
+
+    <footer class="blog-footer">
+      <p>Site desenvolvido pelos alunos: Bruno Caldas e Methuzael Rodrigues. <br>
+Orientados pela professora: Priscylla Silva <br>
+
+<img src="twitter.png" width="20px" height="20px" />  Twitter: <a href="https://twitter.com/@brunocaldas2" title="Ir ao twitter de Bruno Caldas ">@brunocaldas2</a>.</p>
+      <p>
+        <a href="erro21.html#">Voltar ao início da página</a>
+      </p>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./1 erro_files/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="./1 erro_files/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="./1 erro_files/ie10-viewport-bug-workaround.js"></script>
+  
+
+</div></body></html>
