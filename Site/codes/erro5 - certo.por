@@ -1,4 +1,4 @@
-// Descrição do programa: informar todos os numeros pares entra 100 e 200 
+// DescriÃ§Ã£o do programa: informar todos os numeros pares entra 100 e 200 
 programa
 {
 	funcao inicio()
@@ -13,8 +13,8 @@ programa
 }
 /* $$$ Portugol Studio $$$ 
  * 
- * Esta seção do arquivo guarda informações do Portugol Studio.
- * Você pode apagá-la se estiver utilizando outro editor.
+ * Esta seÃ§Ã£o do arquivo guarda informaÃ§Ãµes do Portugol Studio.
+ * VocÃª pode apagÃ¡-la se estiver utilizando outro editor.
  * 
  * @POSICAO-CURSOR = 34; 
  * @PONTOS-DE-PARADA = ;
