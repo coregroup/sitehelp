@@ -1,4 +1,4 @@
-// Descrição do programa: ler o nome, idade, peso e altura do usuario
+// DescriÃ§Ã£o do programa: ler o nome, idade, peso e altura do usuario
 programa
 {
 	funcao inicio()
@@ -19,8 +19,8 @@ programa
 }
 /* $$$ Portugol Studio $$$ 
  * 
- * Esta seção do arquivo guarda informações do Portugol Studio.
- * Você pode apagá-la se estiver utilizando outro editor.
+ * Esta seÃ§Ã£o do arquivo guarda informaÃ§Ãµes do Portugol Studio.
+ * VocÃª pode apagÃ¡-la se estiver utilizando outro editor.
  * 
  * @POSICAO-CURSOR = 419; 
  * @PONTOS-DE-PARADA = ;
