@@ -10,7 +10,7 @@
     <link rel="icon" href="ifs.png">
 
 
-    <title>Parenteses descasados.</title>
+    <title>Colocar espaço entre os dois caracteres que compoem os operadores ==, <=, >=, !=.</title>
 
     <!-- Bootstrap core CSS -->
     <link href="./1 erro_files/bootstrap.min.css" rel="stylesheet">
@@ -61,29 +61,26 @@
           <div class="blog-post">
 
 
-            <h2> Parenteses descasados. </h2>
+            <h2>Colocar espaço entre os dois caracteres que compoem os operadores ==, <=, >=, !=.</h2>
 <br/>
 <hr>
-<br/>
-<p>Esse tipo de erro eh chamado de erro de sintaxe. Todos os parenteses abertos, tem que ser fechados para que o compilador possa compilar o codigo. </p>  
 <br/>
 <hr>
 <p>Exemplos:</p>          
 <center><p>ERRADO</p><center>
 <pre align="left"> 
-<font color="#006600">//Descricao do programa: peca o nome e a idade do usuario.</font> 
+<font color="#006600">//Descricao do programa: Informar todos os números pares no intervalo entre 100 e 200.</font> 
 <font color="#0000FF">programa</font>
 <font color="#FF0000">{</font>
 	<font color="#0000FF">funcao</font> inicio<font color="#FF0000">()</font>
-	<font color="#FF0000">{</font>
-		<font color="#33CCFF">cadeia</font> nome		
-		<font color="#33CCFF">inteiro</font> idade		
-		<font color="#FFCC00">escreva</font><font color="#FF0000">(</font><font color="#FF00FF">"Digite o seu nome: "</font>  <font color="#006600">// O parenteses tem que ser fechado para que a linha possa ser executada.</font>
-		<font color="#FFCC00">leia</font><font color="#FF0000">(</font>nome<font color="#FF0000">)</font>
-		<font color="#FFCC00">escreva</font><font color="#FF0000">(</font><font color="#FF00FF">"Digite sua idade: "</font><font color="#FF0000">)</font> 
-		<font color="#FFCC00">leia</font><font color="#FF0000">(</font>idade  <font color="#006600">// O parenteses tem que ser fechado para que a linha possa ser executada.</font>
-		<font color="#FFCC00">escreva</font><font color="#FF0000">(</font>nome,<font color="#FF00FF">" tem "</font>, idade,<font color="#FF00FF">" anos"</font><font color="#FF0000">)</font>
-	<font color="#FF0000">}</font>
+	<font color="#FF0000">{</font>		
+		<font color="#33CCFF">inteiro</font> i 	
+		<font color="#0000FF">para</font><font color="#FF0000">(</font>i=<font color="#0000FF">100</font>;i<font color="#0000FF">< =200</font>;i++<font color="#FF0000">)</font><font color="#FF0000">{</font>  <font color="#006600">//Não pode haver espaço entre as expressões ==, <=, >=, !=.</font>
+		<font color="#0000FF">se</font><font color="#FF0000">(</font>i%<font color="#0000FF">2==0</font><font color="#FF0000">)</font><font color="#FF0000">{</font>  
+		<font color="#FFCC00">escreva</font><font color="#FF0000">(</font>i,<font color="#FF00FF">"\n"</font><font color="#FF0000">)</font>
+			<font color="#FF0000">}</font>
+		<font color="#FF0000">}</font>
+	  <font color="#FF0000">}</font>
 <font color="#FF0000">}</font>
 </pre>
 
@@ -92,19 +89,18 @@
 <center><p>CERTO</p><center>
 
 <pre align="left"> 
-<font color="#006600">//Descricao do programa: peca o nome e a idade do usuario.</font> 
+<font color="#006600">//Descricao do programa: Informar todos os números pares no intervalo entre 100 e 200.</font> 
 <font color="#0000FF">programa</font>
 <font color="#FF0000">{</font>
 	<font color="#0000FF">funcao</font> inicio<font color="#FF0000">()</font>
-	<font color="#FF0000">{</font>
-		<font color="#33CCFF">cadeia</font> nome		
-		<font color="#33CCFF">inteiro</font> idade		
-		<font color="#FFCC00">escreva</font><font color="#FF0000">(</font><font color="#FF00FF">"Digite o seu nome: "</font><font color="#FF0000">)</font>
-  		<font color="#FFCC00">leia</font><font color="#FF0000">(</font>nome<font color="#FF0000">)</font>
-		<font color="#FFCC00">escreva</font><font color="#FF0000">(</font><font color="#FF00FF">"Digite sua idade: "</font><font color="#FF0000">)</font>
-		<font color="#FFCC00">leia</font><font color="#FF0000">(</font>idade<font color="#FF0000">)</font>
-		<font color="#FFCC00">escreva</font><font color="#FF0000">(</font>nome,<font color="#FF00FF">" tem "</font>, idade,<font color="#FF00FF">" anos"</font><font color="#FF0000">)</font>
-	<font color="#FF0000">}</font>
+	<font color="#FF0000">{</font>		
+		<font color="#33CCFF">inteiro</font> i 	
+		<font color="#0000FF">para</font><font color="#FF0000">(</font>i=<font color="#0000FF">100</font>;i<font color="#0000FF"><=200</font>;i++<font color="#FF0000">)</font><font color="#FF0000">{</font>  <font color="#006600">//Forma correta de usar as expressões, sem espaço entre elas: ==, <=, >=, !=.</font>
+		<font color="#0000FF">se</font><font color="#FF0000">(</font>i%<font color="#0000FF">2==0</font><font color="#FF0000">)</font><font color="#FF0000">{</font>  
+		<font color="#FFCC00">escreva</font><font color="#FF0000">(</font>i,<font color="#FF00FF">"\n"</font><font color="#FF0000">)</font>
+			<font color="#FF0000">}</font>
+		<font color="#FF0000">}</font>
+	  <font color="#FF0000">}</font>
 <font color="#FF0000">}</font>
 </pre>
 
@@ -121,8 +117,8 @@
           <nav>
             <ul class="pager">
               <li>
-<center><a href="erro1.html#" ><button type="button" class="btn btn-lg btn-primary">Anterior</button></a>
-<a href="erro3.html"><button type="button" class="btn btn-lg btn-primary">Proximo</button></a></center>
+<center><a href="erro4.html#" ><button type="button" class="btn btn-lg btn-primary">Anterior</button></a>
+<a href="erro6.html"><button type="button" class="btn btn-lg btn-primary">Proximo</button></a></center>
 
 </li>
             </ul>
@@ -135,7 +131,6 @@
 <iframe width="100%" height="1200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="menu.html"></iframe>
 
      </div><!-- /.blog-sidebar -->
-
  
 </div>
     </div><!-- /.container -->

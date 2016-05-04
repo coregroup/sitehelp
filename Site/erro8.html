@@ -10,7 +10,7 @@
     <link rel="icon" href="ifs.png">
 
 
-    <title>Parenteses descasados.</title>
+    <title>Errar a escrita de um comando.</title>
 
     <!-- Bootstrap core CSS -->
     <link href="./1 erro_files/bootstrap.min.css" rel="stylesheet">
@@ -38,9 +38,9 @@
     <div class="blog-masthead">
       <div class="container">
         <nav class="blog-nav">
-          <a class="blog-nav-item " href="index.html#"title="Voltar a pagina inicial.">Inicio</a>
+          <a class="blog-nav-item " href="index.html#"title="Voltar a pagina inicial.">Início</a>
           <a class="blog-nav-item" href="#">Contatos</a>
-          <a class="blog-nav-item" href="#">Duvidas</a>
+          <a class="blog-nav-item" href="#">Dúvidas</a>
           <a class="blog-nav-item" href="#" title="Conheca tudo sobre o site">Sobre</a>
         </nav>
       </div>
@@ -61,28 +61,30 @@
           <div class="blog-post">
 
 
-            <h2> Parenteses descasados. </h2>
+            <h2>Errar a escrita de um comando.</h2>
 <br/>
 <hr>
-<br/>
-<p>Esse tipo de erro eh chamado de erro de sintaxe. Todos os parenteses abertos, tem que ser fechados para que o compilador possa compilar o codigo. </p>  
 <br/>
 <hr>
 <p>Exemplos:</p>          
 <center><p>ERRADO</p><center>
 <pre align="left"> 
-<font color="#006600">//Descricao do programa: peca o nome e a idade do usuario.</font> 
+<font color="#006600">//Descricao do programa: Leia o nome, altura, peso e idade do usuario.</font> 
 <font color="#0000FF">programa</font>
 <font color="#FF0000">{</font>
 	<font color="#0000FF">funcao</font> inicio<font color="#FF0000">()</font>
-	<font color="#FF0000">{</font>
-		<font color="#33CCFF">cadeia</font> nome		
-		<font color="#33CCFF">inteiro</font> idade		
-		<font color="#FFCC00">escreva</font><font color="#FF0000">(</font><font color="#FF00FF">"Digite o seu nome: "</font>  <font color="#006600">// O parenteses tem que ser fechado para que a linha possa ser executada.</font>
-		<font color="#FFCC00">leia</font><font color="#FF0000">(</font>nome<font color="#FF0000">)</font>
-		<font color="#FFCC00">escreva</font><font color="#FF0000">(</font><font color="#FF00FF">"Digite sua idade: "</font><font color="#FF0000">)</font> 
-		<font color="#FFCC00">leia</font><font color="#FF0000">(</font>idade  <font color="#006600">// O parenteses tem que ser fechado para que a linha possa ser executada.</font>
-		<font color="#FFCC00">escreva</font><font color="#FF0000">(</font>nome,<font color="#FF00FF">" tem "</font>, idade,<font color="#FF00FF">" anos"</font><font color="#FF0000">)</font>
+	<font color="#FF0000">{</font>		
+		<font color="#33CCFF">cadeia</font> nome 	
+		<font color="#33CCFF">real</font> altura, peso
+		<font color="#33CCFF">inteiro</font> idade
+		<font color="#FFCC00">escreve</font><font color="#FF0000">(</font><font color="#FF00FF">"Digite seu nome: "</font><font color="#FF0000">)</font><font color="#006600">//Escrita incorreta do comando "escreva".</font>
+		<font color="#FFCC00">leia</font><font color="#FF0000">(</font><font color="#FF00FF">nome</font><font color="#FF0000">)</font>
+		<font color="#FFCC00">escreva</font><font color="#FF0000">(</font><font color="#FF00FF">"Digite sua idade: "</font><font color="#FF0000">)</font>
+		<font color="#FFCC00">leia</font><font color="#FF0000">(</font><font color="#FF00FF">idade</font><font color="#FF0000">)</font>
+		<font color="#FFCC00">escreva</font><font color="#FF0000">(</font><font color="#FF00FF">"Digite sua altura: "</font><font color="#FF0000">)</font>
+		<font color="#FFCC00">leia</font><font color="#FF0000">(</font><font color="#FF00FF">altura</font><font color="#FF0000">)</font>
+		<font color="#FFCC00">escreva</font><font color="#FF0000">(</font><font color="#FF00FF">"Digite seu peso: "</font><font color="#FF0000">)</font>
+		<font color="#FFCC00">leya</font><font color="#FF0000">(</font><font color="#FF00FF">peso</font><font color="#FF0000">)</font><font color="#006600">//Escrita incorreta do comando "leia".</font>
 	<font color="#FF0000">}</font>
 <font color="#FF0000">}</font>
 </pre>
@@ -92,18 +94,22 @@
 <center><p>CERTO</p><center>
 
 <pre align="left"> 
-<font color="#006600">//Descricao do programa: peca o nome e a idade do usuario.</font> 
+<font color="#006600">//Descricao do programa: Leia o nome, altura, peso e idade do usuario.</font> 
 <font color="#0000FF">programa</font>
 <font color="#FF0000">{</font>
 	<font color="#0000FF">funcao</font> inicio<font color="#FF0000">()</font>
-	<font color="#FF0000">{</font>
-		<font color="#33CCFF">cadeia</font> nome		
-		<font color="#33CCFF">inteiro</font> idade		
-		<font color="#FFCC00">escreva</font><font color="#FF0000">(</font><font color="#FF00FF">"Digite o seu nome: "</font><font color="#FF0000">)</font>
-  		<font color="#FFCC00">leia</font><font color="#FF0000">(</font>nome<font color="#FF0000">)</font>
+	<font color="#FF0000">{</font>		
+		<font color="#33CCFF">cadeia</font> nome 	
+		<font color="#33CCFF">real</font> altura, peso
+		<font color="#33CCFF">inteiro</font> idade
+		<font color="#FFCC00">escreva</font><font color="#FF0000">(</font><font color="#FF00FF">"Digite seu nome: "</font><font color="#FF0000">)</font>
+		<font color="#FFCC00">leia</font><font color="#FF0000">(</font><font color="#FF00FF">nome</font><font color="#FF0000">)</font>
 		<font color="#FFCC00">escreva</font><font color="#FF0000">(</font><font color="#FF00FF">"Digite sua idade: "</font><font color="#FF0000">)</font>
-		<font color="#FFCC00">leia</font><font color="#FF0000">(</font>idade<font color="#FF0000">)</font>
-		<font color="#FFCC00">escreva</font><font color="#FF0000">(</font>nome,<font color="#FF00FF">" tem "</font>, idade,<font color="#FF00FF">" anos"</font><font color="#FF0000">)</font>
+		<font color="#FFCC00">leia</font><font color="#FF0000">(</font><font color="#FF00FF">idade</font><font color="#FF0000">)</font>
+		<font color="#FFCC00">escreva</font><font color="#FF0000">(</font><font color="#FF00FF">"Digite sua altura: "</font><font color="#FF0000">)</font>
+		<font color="#FFCC00">leia</font><font color="#FF0000">(</font><font color="#FF00FF">altura</font><font color="#FF0000">)</font>
+		<font color="#FFCC00">escreva</font><font color="#FF0000">(</font><font color="#FF00FF">"Digite seu peso: "</font><font color="#FF0000">)</font>
+		<font color="#FFCC00">leia</font><font color="#FF0000">(</font><font color="#FF00FF">peso</font><font color="#FF0000">)</font>
 	<font color="#FF0000">}</font>
 <font color="#FF0000">}</font>
 </pre>
@@ -121,8 +127,8 @@
           <nav>
             <ul class="pager">
               <li>
-<center><a href="erro1.html#" ><button type="button" class="btn btn-lg btn-primary">Anterior</button></a>
-<a href="erro3.html"><button type="button" class="btn btn-lg btn-primary">Proximo</button></a></center>
+<center><a href="erro7.html#" ><button type="button" class="btn btn-lg btn-primary">Anterior</button></a>
+<a href="erro14.html"><button type="button" class="btn btn-lg btn-primary">Proximo</button></a></center>
 
 </li>
             </ul>
