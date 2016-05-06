@@ -8,7 +8,7 @@
     <link rel="icon" href="icone.ico">
 
 
-    <title>Declaração de variável incorreta</title>
+    <title>Case Sensitive</title>
 
     <!-- Bootstrap core CSS -->
     <link href="./1 erro_files/bootstrap.min.css" rel="stylesheet">
@@ -33,7 +33,9 @@
 
   <body>
 
-   <iframe width="100%" height="40px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="top.html"></iframe>
+    <iframe width="100%" height="40px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="top.html"></iframe>
+
+    
 
 
 <div class="container">
@@ -47,34 +49,41 @@
 
           <div class="blog-post">
 
-	<h2>Declaração de variável incompatível com seu tipo declarado</h2>
+
+            <h2> Erros relacionados ao Case Sensitive </h2>
 <br/>
 <hr>
 <br/>
-<p> Um erro que acontece quando erramos o tipo de uma variável.</p>  
+<p> Este erro acontece devido ao motivo que o Portugol Studio segue regras de que : </p> 
+<ul>
+<li>O primeiro caracter deve ser uma letra;</li> 
+<li>Os nomes devem ser formados por caracteres pertencentes ao seguinte conjunto: {a,b,c,...,z,A,B,C,...Z,0,1,2,...,9,_};</li> 
+<li>Não deve haver espaço em branco;</li>
+<li>Não deve haver variáveis repetidas;</li>
+<li>Cuidado com Case Sensitive.</li>
+</ul> 
+<p>Case Sensitive : termo em inglês que significa Sensível ao tamanho, no caso, o tamanho refere-se a maiúsculas e minúsculas na definição de variáveis, métodos e comando em um programa ou um compilador. Ou seja, significa também que o Português Estruturado faz a distinção entre os tamanhos das letras.</p> 
 <br/>
 <hr>
 <p>Exemplos:</p>          
 <center><p>ERRADO</p><center>
 
 <pre align="left"> 
+<font color="#006600">//Descricao do programa: Escreva um script que dê um desconto de 10% no valor do produto.</font> 
 
-<font color="#006600">//Escreva um algoritmo que leia 4 notas de um aluno e depois informe a média.</font> 
 <font color="#0000FF">programa</font>
 <font color="#FF0000">{</font>
 	<font color="#0000FF">funcao</font> inicio<font color="#FF0000">()</font>
 	<font color="#FF0000">{</font>
 
-		<font color="#238E68">inteiro</font> nota, cont<font color="#6F4242">=</font><font color="#6B238E">0</font>, i <font color="#006600">// A variável "nota" e "cont" deveriam ser reais, 
-					//afinal um aluno pode tirar tanto de nota(nota) como de média(cont): 5.5, 9.7, etc.</font>
+		Real valor_do_produto, Desconto <font color="#006600">//Este erro é válido tanto para comandos como para nome de variáveis.</font> 
 
-		<font color="#0000FF">para </font><font color="#FF0000">(</font>i<font color="#6F4242">=</font><font color="#6B238E">1</font>; i<font color="#6F4242"><=</font><font color="#6B238E">4</font>; i<font color="#6F4242">++</font><font color="#FF0000">)</font> <font color="#FF0000">{</font>
-			<font color="#CFB53B">escreva </font><font color="#FF0000"> (</font><font color="#CC3299">"Informe a "</font>, i,<font color="#CC3299">" nota do aluno :"</font><font color="#FF0000">)</font>
-			<font color="#CFB53B">leia </font><font color="#FF0000">(</font>nota<font color="#FF0000">)</font>
-			cont <font color="#6F4242">=</font> nota<font color="#6F4242">+</font>cont	
-		<font color="#FF0000">}</font>
+		<font color="#CFB53B">escreva </font><font color="#FF0000">(</font><font color="#CC3299">"Informe o valor do produto : "</font><font color="#FF0000">)</font>
+		<font color="#CFB53B">leia </font><font color="#FF0000">(</font>valor_do_produto<font color="#FF0000">)</font>
 
-		<font color="#CFB53B">escreva </font><font color="#FF0000"> (</font><font color="#CC3299">"A média do aluno é : "</font>, cont<font color="#6F4242">/</font><font color="#6B238E">4</font><font color="#FF0000">)</font>
+		desconto <font color="#6F4242">=</font> valor_do_produto<font color="#6F4242">-</font><font color="#FF0000">((</font>valor_do_produto<font color="#6F4242">/</font><font color="#6B238E">100</font><font color="#FF0000">)</font><font color="#6F4242">*</font><font color="#6B238E">10</font><font color="#FF0000">)</font>
+		
+		Escreva <font color="#FF0000">(</font><font color="#CC3299">"O valor do produto com o desconto é : "</font>, desconto<font color="#FF0000">)</font>
 	<font color="#FF0000">}</font>
 <font color="#FF0000">}</font>
 
@@ -85,21 +94,21 @@
 <center><p>CERTO</p><center>
 
 <pre align="left"> 
-<font color="#006600">//Descricao do programa: Escreva um algoritmo que leia 4 notas de um aluno e depois informe a média.</font> 
+<font color="#006600">//Descricao do programa: Escreva um script que dê um desconto de 10% no valor do produto.</font> 
+
 <font color="#0000FF">programa</font>
 <font color="#FF0000">{</font>
 	<font color="#0000FF">funcao</font> inicio<font color="#FF0000">()</font>
 	<font color="#FF0000">{</font>
-		<font color="#238E68">inteiro</font> i
-		<font color="#238E68">real</font> nota, cont<font color="#6F4242">=</font><font color="#6B238E">0</font>
 
-		<font color="#0000FF">para </font><font color="#FF0000">(</font>i<font color="#6F4242">=</font><font color="#6B238E">1</font>; i<font color="#6F4242"><=</font><font color="#6B238E">4</font>; i<font color="#6F4242">++</font><font color="#FF0000">)</font> <font color="#FF0000">{</font>
-			<font color="#CFB53B">escreva </font><font color="#FF0000"> (</font><font color="#CC3299">"Informe a "</font>, i,<font color="#CC3299">" nota do aluno :"</font><font color="#FF0000">)</font>
-			<font color="#CFB53B">leia </font><font color="#FF0000">(</font>nota<font color="#FF0000">)</font>
-			cont <font color="#6F4242">=</font> nota<font color="#6F4242">+</font>cont	
-		<font color="#FF0000">}</font>
+		<font color="#238E68">real</font> valor_do_produto, desconto
 
-		<font color="#CFB53B">escreva </font><font color="#FF0000"> (</font><font color="#CC3299">"A média do aluno é : "</font>, cont<font color="#6F4242">/</font><font color="#6B238E">4</font><font color="#FF0000">)</font>
+		<font color="#CFB53B">escreva </font><font color="#FF0000">(</font><font color="#CC3299">"Informe o valor do produto : "</font><font color="#FF0000">)</font>
+		<font color="#CFB53B">leia </font><font color="#FF0000">(</font>valor_do_produto<font color="#FF0000">)</font>
+
+		desconto <font color="#6F4242">=</font> valor_do_produto<font color="#6F4242">-</font><font color="#FF0000">((</font>valor_do_produto<font color="#6F4242">/</font><font color="#6B238E">100</font><font color="#FF0000">)</font><font color="#6F4242">*</font><font color="#6B238E">10</font><font color="#FF0000">)</font>
+		
+		<font color="#CFB53B">escreva </font><font color="#FF0000">(</font><font color="#CC3299">"O valor do produto com o desconto é : "</font>, desconto<font color="#FF0000">)</font>
 	<font color="#FF0000">}</font>
 <font color="#FF0000">}</font>
 
@@ -132,6 +141,8 @@
 
 <div class="sidebar-module">
 <iframe width="100%" height="1200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="menu.html"></iframe>
+</div>
+
      </div><!-- /.blog-sidebar -->
 
  

@@ -8,7 +8,7 @@
     <link rel="icon" href="icone.ico">
 
 
-    <title>Se esquecendo das aspas em um caracter ou cadeia</title>
+    <title>Isto não deveria estar aqui</title>
 
     <!-- Bootstrap core CSS -->
     <link href="./1 erro_files/bootstrap.min.css" rel="stylesheet">
@@ -35,8 +35,6 @@
 
     <iframe width="100%" height="40px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="top.html"></iframe>
 
-    
-
 
 <div class="container">
 
@@ -50,34 +48,34 @@
           <div class="blog-post">
 
 
-            <h2> Fazer comparação com uma variável do tipo char ou cadeia e não colocá-lo em aspas . </h2>
+            <h2> Uso de código que não e necessário para a solução do problema </h2>
 <br/>
 <hr>
 <br/>
-<p> Um erro que acontece quando esquecemos de colocar as aspas em uma comparação entre caracteres ou variáveis.</p>  
+<p> Um erro que geralmente acontece quando alunos copiam parte um código e colam no que estão fazendo para não perder tempo digitando novamente, mas do que adianta se você colar algum aparte que não deveria ter colado.</p>  
 <br/>
 <hr>
 <p>Exemplos:</p>          
 <center><p>ERRADO</p><center>
 
 <pre align="left"> 
-
-<font color="#006600">//Descricao do programa: Escreva um algoritmo que receba uma senha e informe se a senha é igual a "casa". 
-//Se sim, ele exiba "Bem vindo"; senão : "Senha Incorreta".</font> 
+<font color="#006600">//Descricao do programa: Escreva um algoritmo que receba uma senha e compare se a senha é igual a "casa".
+//Se sim, ele exiba "Bem vindo"; senão : "Senha Incorreta".</font>
 
 <font color="#0000FF">programa</font>
 <font color="#FF0000">{</font>
 	<font color="#0000FF">funcao</font> inicio<font color="#FF0000">()</font>
 	<font color="#FF0000">{</font>
 		<font color="#238E68">cadeia</font> senha
-
+		<font color="#238E68">inteiro</font> cont  <font color="#006600">//O que a variável "cont" está fazendo nesse algoritmo ? Dando trabalho.</font> 
+		
 		<font color="#CFB53B">escreva </font><font color="#FF0000">(</font><font color="#CC3299">"Informe a senha por favor : "</font><font color="#FF0000">)</font>
 		<font color="#CFB53B">leia </font><font color="#FF0000">(</font>senha<font color="#FF0000">)</font>
-
-		<font color="#0000FF">se</font><font color="#FF0000"> (</font>senha <font color="#6F4242">==</font> casa<font color="#FF0000">)</font> <font color="#CFB53B">escreva </font><font color="#FF0000">(</font><font color="#CC3299">" Bem Vindo"</font><font color="#FF0000">)</font>
+		cont <font color="#6F4242">=</font><font color="#6B238E"> 1</font>
+		
+		<font color="#0000FF">se</font><font color="#FF0000"> (</font>senha <font color="#6F4242">==</font><font color="#CC3299"> "casa"</font><font color="#FF0000">)</font> <font color="#CFB53B">escreva </font><font color="#FF0000">(</font><font color="#CC3299">" Bem Vindo"</font><font color="#FF0000">)</font>
 		<font color="#0000FF">senao</font> <font color="#CFB53B">escreva </font><font color="#FF0000">(</font><font color="#CC3299">"Senha Incorreta"</font><font color="#FF0000">)</font>
-	<font color="#FF0000">}</font> <font color="#006600">// Perceba que na tag de repetição "se", a cadeia de caracteres "casa" não estava entre aspas, 
-	  //o que causou um erro no script.</font>
+	<font color="#FF0000">}</font> 
 <font color="#FF0000">}</font>
 
 </pre>
@@ -87,8 +85,7 @@
 <center><p>CERTO</p><center>
 
 <pre align="left"> 
-<font color="#006600">//Descricao do programa: Escreva um algoritmo que receba uma senha e informe se a senha é igual a "casa". 
-//Se sim, ele exiba "Bem vindo"; senão : "Senha Incorreta".</font> 
+<font color="#006600">//Descricao do programa: Escreva um algoritmo que receba uma senha e compare se a senha é igual a "casa".</font> 
 
 <font color="#0000FF">programa</font>
 <font color="#FF0000">{</font>

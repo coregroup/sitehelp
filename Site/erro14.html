@@ -8,7 +8,7 @@
     <link rel="icon" href="icone.ico">
 
 
-    <title>Ciclo Infinito</title>
+    <title>Variáveis Contadoras novamente</title>
 
     <!-- Bootstrap core CSS -->
     <link href="./1 erro_files/bootstrap.min.css" rel="stylesheet">
@@ -35,6 +35,8 @@
 
     <iframe width="100%" height="40px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="top.html"></iframe>
 
+    
+
 
 <div class="container">
 
@@ -48,36 +50,29 @@
           <div class="blog-post">
 
 
-            <h2> Criação de Ciclo Infinito </h2>
+            <h2>Utilização incorreta de variáveis contadoras ou acumuladoras em comandos de repetição (Esquecer de declarar, ...).</h2>
 <br/>
 <hr>
 <br/>
-<p> Um ciclo cuja condição de paragem nunca é verificada. Isto acontece muito quando nos esquecemos de atualizar o contador que controla a condição de paragem do ciclo.</p>  
+<p> Este erro acontece quando utlizamos de forma incorreta as variáveis contadoras, por exemplo : Esquecer de declara-las, coloca-las em local incorreto, etc.</p>  
 <br/>
 <hr>
 <p>Exemplos:</p>          
 <center><p>ERRADO</p><center>
 
 <pre align="left"> 
+<font color="#006600">//Descricao do programa: Escreva um algoritmo que escreva o nome Maria 5 vezes. </font> 
 
-<font color="#006600">//Descricao do programa: Escreva um algoritmo que receba 5 números e mostre a soma dos mesmos.</font> 
 <font color="#0000FF">programa</font>
 <font color="#FF0000">{</font>
 	<font color="#0000FF">funcao</font> inicio<font color="#FF0000">()</font>
 	<font color="#FF0000">{</font>
-		<font color="#238E68">inteiro</font> num, soma<font color="#6F4242">=</font><font color="#6B238E">0</font>, cont=<font color="#6B238E">0</font>
+	<font color="#006600">//Observe que o usuário não declarou a variável contadora utilizada no comando de repetição "para". </font>
 		
-		<font color="#0000FF">enquanto</font><font color="#FF0000"> (</font>cont<font color="#6F4242"><</font><font color="#6B238E">5</font><font color="#FF0000">) {</font>
-			<font color="#CFB53B">escreva </font><font color="#FF0000">(</font><font color="#CC3299">"Informe o número que deseja acrescentar a soma : "</font><font color="#FF0000">)</font>
-			<font color="#CFB53B">leia </font><font color="#FF0000">(</font>num<font color="#FF0000">)</font>
-			soma <font color="#6F4242">=</font> num<font color="#6F4242"> + </font>soma
-		<font color="#FF0000">}</font> <font color="#006600">//Veja que o usuário fechou a tag de repetição, mas não colocou 
-		  //a variável contadora, que no exemplo teria a cada repetição 
-		  //1 número a mais em seu valor.</font>
-
-		<font color="#CFB53B">escreva </font> <font color="#FF0000">(</font><font color="#CC3299">"A soma dos números informados é : "</font>, soma<font color="#FF0000">)</font>
+		<font color="#0000FF">para </font><font color="#FF0000">(</font>i<font color="#6F4242">=</font><font color="#6B238E">1</font>; i<font color="#6F4242"><=</font><font color="#6B238E">5</font>; i<font color="#6F4242">++</font><font color="#FF0000">)</font>  <font color="#CFB53B">escreva </font><font color="#FF0000"> (</font><font color="#CC3299">"Maria!"</font><font color="#FF0000">)</font>
 	<font color="#FF0000">}</font>
 <font color="#FF0000">}</font>
+
 </pre>
 
 <br/>
@@ -85,21 +80,15 @@
 <center><p>CERTO</p><center>
 
 <pre align="left"> 
-<font color="#006600">//Descricao do programa: Escreva um algoritmo que receba 5 números e mostre a soma dos mesmos.</font> 
+<font color="#006600">//Descricao do programa: Escreva um algoritmo que escreva o nome Maria 5 vezes.</font> 
+
 <font color="#0000FF">programa</font>
 <font color="#FF0000">{</font>
 	<font color="#0000FF">funcao</font> inicio<font color="#FF0000">()</font>
 	<font color="#FF0000">{</font>
-		<font color="#238E68">inteiro</font> num, soma=<font color="#6B238E">0</font>, cont=<font color="#6B238E">0</font>
-		
-		<font color="#0000FF">enquanto</font><font color="#FF0000"> (</font>cont<font color="#6F4242"><</font><font color="#6B238E">5</font><font color="#FF0000">) {</font>
-			<font color="#CFB53B">escreva </font><font color="#FF0000">(</font><font color="#CC3299">"Informe o número que deseja acrescentar a soma : "</font><font color="#FF0000">)</font>
-			<font color="#CFB53B">leia </font><font color="#FF0000">(</font>num<font color="#FF0000">)</font>
-			soma <font color="#6F4242">=</font> num<font color="#6F4242"> + </font>soma
-			cont<font color="#6F4242">++</font>
-		<font color="#FF0000">}</font> <font color="#006600">//O usuário agora criou uma váriavel chamada "cont" que recebe a cada repetição +1.</font>
+		<font color="#238E68">inteiro</font> i
 
-		<font color="#CFB53B">escreva </font> <font color="#FF0000">(</font><font color="#CC3299">"A soma dos números informados é : "</font>, soma<font color="#FF0000">)</font>
+		<font color="#0000FF">para </font><font color="#FF0000">(</font>i<font color="#6F4242">=</font><font color="#6B238E">1</font>; i<font color="#6F4242"><=</font><font color="#6B238E">5</font>; i<font color="#6F4242">++</font><font color="#FF0000">)</font>  <font color="#CFB53B">escreva </font><font color="#FF0000"> (</font><font color="#CC3299">"Maria!"</font><font color="#FF0000">)</font>
 	<font color="#FF0000">}</font>
 <font color="#FF0000">}</font>
 
@@ -118,7 +107,7 @@
           <nav>
             <ul class="pager">
               <li>
-<center><a href="index.html" ><button type="button" class="btn btn-lg btn-primary">Anterior</button></a>
+<center><a href="erro13.html" ><button type="button" class="btn btn-lg btn-primary">Anterior</button></a>
 <a href="erro15.html"><button type="button" class="btn btn-lg btn-primary">Próximo</button></a></center>
 
 </li>

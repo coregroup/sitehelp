@@ -8,7 +8,7 @@
     <link rel="icon" href="icone.ico">
 
 
-    <title>Variável com Nome Incorreto</title>
+    <title>Não é correspondente</title>
 
     <!-- Bootstrap core CSS -->
     <link href="./1 erro_files/bootstrap.min.css" rel="stylesheet">
@@ -48,39 +48,29 @@
           <div class="blog-post">
 
 
-            <h2> Erro na declaração de variáveis, relacionados ao nome ! </h2>
+            <h2> Código não corresponde com a questão </h2>
 <br/>
 <hr>
 <br/>
-<p> Este erro acontece devido ao motivo que o Portugol Studio segue regras de que : </p> 
-<ul>
-<li>O primeiro caracter deve ser uma letra;</li> 
-<li>Os nomes devem ser formados por caracteres pertencentes ao seguinte conjunto: {a,b,c,...,z,A,B,C,...Z,0,1,2,...,9,_};</li> 
-<li>Não deve haver espaço em branco;</li>
-<li>Não deve haver variáveis repetidas;</li>
-<li>Cuidado com Case Sensitive. </li>
-</ul> 
+<p> Este erro ocorre quando o script escrito não tem quase nada a ver com o que a questão pede.</p>  
 <br/>
 <hr>
 <p>Exemplos:</p>          
 <center><p>ERRADO</p><center>
 
 <pre align="left"> 
-<font color="#006600">//Descricao do programa: Escreva um algortmo que receba o nome de um usuário e dê bom dia ao nome do usuário.</font> 
+<font color="#006600">//Descricao do programa: Escreva um algoritmo que imprima de 1 a 10.</font> 
 
 <font color="#0000FF">programa</font>
 <font color="#FF0000">{</font>
 	<font color="#0000FF">funcao</font> inicio<font color="#FF0000">()</font>
 	<font color="#FF0000">{</font>
-		<font color="#238E68">cadeia</font> nome do usuário 
-		
-		<font color="#006600">//Observe que o usuário criou uma variável com espaços e contendo um acento no nome "usuário", claro que o resultado foi um erro.
-		//Isso porque o Portugol Studio reconheceu "nome", "de", "usuário", como 3 variáveis diferentes. Uma solução seria unir as 3 palavras utilizando urderline's(_), 
-		// menos (-), etc; Como também se poderia resumir onome em algumas letras : ndu.</font>
-
-		<font color="#CFB53B">escreva </font><font color="#FF0000">(</font><font color="#CC3299">"Informe o nome do usuário :"</font><font color="#FF0000">)</font>
-		<font color="#CFB53B">leia </font><font color="#FF0000">(</font>nome do usuário<font color="#FF0000">)</font>
-		<font color="#CFB53B">escreva </font><font color="#FF0000">(</font><font color="#CC3299">"Bom dia "</font>, nome do usuário,<font color="#CC3299"> " !"</font><font color="#FF0000">)</font>
+		<font color="#238E68">inteiro</font> i<font color="#6F4242">=</font><font color="#6B238E">1</font>
+		<font color="#0000FF">enquanto</font><font color="#FF0000"> (</font>i <font color="#6F4242"><=</font> <font color="#6B238E">10</font><font color="#FF0000">) {</font>
+			<font color="#0000FF">se</font><font color="#FF0000"> (</font>i <font color="#6F4242">%</font> <font color="#6B238E">2</font> <font color="#6F4242">==</font> <font color="#6B238E">0</font><font color="#FF0000">)</font> <font color="#CFB53B">escreva </font><font color="#FF0000"> (</font>i, <font color="#CC3299">" é par\n"</font><font color="#FF0000"> )</font>
+			<font color="#0000FF">senao</font><font color="#FF0000"> (</font>i,<font color="#CC3299">" é ímpar\n"</font><font color="#FF0000"> )</font>
+			i<font color="#6F4242">++</font>
+		<font color="#FF0000">}</font><font color="#006600"> //Não há nenhuma parte na questão que pede para mostrar se o número é par ou impar.</font> 
 	<font color="#FF0000">}</font>
 <font color="#FF0000">}</font>
 
@@ -91,17 +81,17 @@
 <center><p>CERTO</p><center>
 
 <pre align="left"> 
-<font color="#006600">//Descricao do programa: Escreva um algortmo que receba o nome de um usuário e dê bom dia ao nome do usuário.</font> 
+<font color="#006600">//Descricao do programa: Escreva um algoritmo que imprima de 1 a 10.</font> 
 
 <font color="#0000FF">programa</font>
 <font color="#FF0000">{</font>
 	<font color="#0000FF">funcao</font> inicio<font color="#FF0000">()</font>
 	<font color="#FF0000">{</font>
-		<font color="#238E68">cadeia</font> nome_do_usuario
-
-		<font color="#CFB53B">escreva </font><font color="#FF0000">(</font><font color="#CC3299">"Informe o nome do usuário :"</font><font color="#FF0000">)</font>
-		<font color="#CFB53B">leia </font><font color="#FF0000">(</font>nome_do_usuario<font color="#FF0000">)</font>
-		<font color="#CFB53B">escreva </font><font color="#FF0000">(</font><font color="#CC3299">"Bom dia "</font>, nome_do_usuario,<font color="#CC3299"> " !"</font><font color="#FF0000">)</font>
+		<font color="#238E68">inteiro</font> i<font color="#6F4242">=</font><font color="#6B238E">1</font>
+		<font color="#0000FF">enquanto</font><font color="#FF0000"> (</font>i <font color="#6F4242"><=</font> <font color="#6B238E">10</font><font color="#FF0000">) {</font>
+			<font color="#CFB53B">escreva </font><font color="#FF0000"> (</font>i,<font color="#CC3299"> " "</font><font color="#FF0000"> )</font>
+			i<font color="#6F4242">++</font>
+		<font color="#FF0000">}</font>
 	<font color="#FF0000">}</font>
 <font color="#FF0000">}</font>
 
